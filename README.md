@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Kasparro – Frontend Engineering Assignment
 
-## Getting Started
+This project is a frontend implementation of Kasparro, an AI-native SEO and Brand Intelligence platform built for the AI-first search era (such as ChatGPT, Gemini, and Perplexity).
 
-First, run the development server:
+The purpose of this assignment is to showcase frontend system design, clean component architecture, and the ability to present a complex, data-driven AI product in a clear and scalable user interface.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Tech Stack Used
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project is built using:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Next.js with the App Router
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+TypeScript
 
-## Learn More
+Tailwind CSS
 
-To learn more about Next.js, take a look at the following resources:
+Zustand for global state management
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Mocked JSON data (no backend integration)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Project Structure Overview
 
-## Deploy on Vercel
+The project is organized to clearly separate public pages, product dashboard screens, reusable components, state management, and data.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Public pages are located under:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Home page
+
+Platform overview page
+
+About page
+
+The product dashboard lives under the app section and includes:
+
+A dashboard page for high-level brand metrics
+
+An audit page which is the core product experience
+
+An architecture page that explains the system flow
+
+Reusable layout and UI components are kept separate, mocked data is stored in a dedicated folder, and global state is managed using a single Zustand store.
+
+Architectural Decisions
+
+System-First UI Design
+The frontend is designed to reflect Kasparro’s internal audit pipeline. The UI follows a clear flow from inputs, to context processing, to modular audits, and finally to actionable outputs. This ensures the interface represents system thinking rather than disconnected pages.
+
+Modular Audit Architecture
+Each audit module is defined using structured JSON data and rendered dynamically in the UI. This approach allows new audit modules to be added easily without modifying the core UI logic.
+
+Global State Management
+Zustand is used to manage global state such as the currently selected audit module. This keeps the state predictable, avoids unnecessary prop drilling, and makes the application easier to scale.
+
+Data-Driven UI
+All scores, issues, and recommendations are driven entirely from mocked JSON data. Hardcoded values inside components were intentionally avoided to keep the system flexible and realistic.
+
+Key Screens Implemented
+
+Public Website
+The public section includes a home page that explains the value proposition quickly, a platform page that explains the AI audit pipeline, and an about page that communicates the mission, product philosophy, and vision for AI-first search.
+
+Product Dashboard
+The dashboard provides a high-level snapshot of brand metrics. The audit screen is the core product view, showing seven audit modules with scores, issues, and recommendations. The architecture page explains how the overall system works from a frontend perspective.
+
+Tradeoffs and Assumptions
+
+Visual styling was kept intentionally minimal to prioritize clarity, structure, and readability. No backend or authentication was implemented, as the assignment explicitly allows the use of mocked data. Mock data is used to simulate realistic audit outputs.
+
+How to Run the Project Locally
+
+Install dependencies using npm install
+Start the development server using npm run dev
+Open the application in the browser at localhost port 3000

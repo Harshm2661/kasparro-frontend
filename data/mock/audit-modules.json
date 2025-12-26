@@ -1,0 +1,95 @@
+[
+  {
+    "id": "ai_visibility",
+    "name": "AI Visibility",
+    "score": 78,
+    "summary": "How visible the brand is in AI-generated answers.",
+    "issues": [
+      "Low visibility for comparison-style queries",
+      "Inconsistent mentions across AI platforms"
+    ],
+    "recommendations": [
+      "Create comparison-focused content",
+      "Improve entity consistency across pages"
+    ]
+  },
+  {
+    "id": "brand_trust",
+    "name": "Brand Trust / EEAT",
+    "score": 82,
+    "summary": "Perceived trustworthiness across AI systems.",
+    "issues": [
+      "Limited author credentials visible",
+      "Few authoritative citations"
+    ],
+    "recommendations": [
+      "Add author bios with credentials",
+      "Earn citations from authoritative sources"
+    ]
+  },
+  {
+    "id": "non_branded",
+    "name": "Non-Branded Coverage",
+    "score": 64,
+    "summary": "Coverage for non-branded queries.",
+    "issues": [
+      "Low coverage for generic intent queries"
+    ],
+    "recommendations": [
+      "Target intent-based keywords",
+      "Publish educational content"
+    ]
+  },
+  {
+    "id": "content_clarity",
+    "name": "Content Clarity",
+    "score": 71,
+    "summary": "How clearly AI systems understand your content.",
+    "issues": [
+      "Ambiguous headings",
+      "Long unstructured paragraphs"
+    ],
+    "recommendations": [
+      "Use clear section headers",
+      "Break content into concise sections"
+    ]
+  },
+  {
+    "id": "authority",
+    "name": "Authority Signals",
+    "score": 69,
+    "summary": "Signals indicating topical authority.",
+    "issues": [
+      "Limited backlinks in core topic areas"
+    ],
+    "recommendations": [
+      "Build topic clusters",
+      "Strengthen internal linking"
+    ]
+  },
+  {
+    "id": "freshness",
+    "name": "Content Freshness",
+    "score": 74,
+    "summary": "Recency and update frequency of content.",
+    "issues": [
+      "Several key pages not updated recently"
+    ],
+    "recommendations": [
+      "Refresh high-impact pages quarterly"
+    ]
+  },
+  {
+    "id": "technical",
+    "name": "Technical Signals",
+    "score": 80,
+    "summary": "Underlying technical SEO signals.",
+    "issues": [
+      "Minor crawl inefficiencies detected"
+    ],
+    "recommendations": [
+      "Optimize crawl budget",
+      "Improve sitemap accuracy"
+    ]
+  }
+]

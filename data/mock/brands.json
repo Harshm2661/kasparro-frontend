@@ -1,0 +1,14 @@
+[
+  {
+    "id": "brand-1",
+    "name": "TechCorp",
+    "domain": "techcorp.com",
+    "industry": "Technology"
+  },
+  {
+    "id": "brand-2",
+    "name": "HealthPlus",
+    "domain": "healthplus.com",
+    "industry": "Healthcare"
+  }
+]
